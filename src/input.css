@@ -47,7 +47,7 @@ h3{
     @apply text-yellow-500
 }
 
-/* button */
+/* button */ 
 
 .btn{
     @apply  border border-yellow-500 bg-yellow-500 rounded-md px-5 py-2
@@ -81,5 +81,26 @@ h3{
     background-image: url('../assets/img/cover.png');
     background-size: cover;
     background-position: center;
-    height: 80vh; /* Ajustez la hauteur selon vos besoins */
+    height: 80vh;
+    
+}
+
+
+/* Points de rupture pour les tailles d'écran */
+@media (max-width: 639px) { /* sm */
+    .juste {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) { /* md */
+    .juste {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { /* lg */
+    .juste {
+        height: 80vh;
+    }
 }
