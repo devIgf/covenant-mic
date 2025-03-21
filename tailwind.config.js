@@ -8,7 +8,13 @@
       lg:"768px",
       xl:"1180px"
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        'Montserrat': ['Montserrat', 'sans-serif'],
+        'Italic':['Italic', 'sans-serif'],
+        'Futura':['Futura', 'sans-serif']
+      }
+    },
     keyframes: {
       move: {
         "50%" : { transform: "translateY( -1rem)" }
@@ -30,7 +36,7 @@
     },
     fontFamily:{
       Jost: ["Jost", "sans-serif"],
-      Lobster: ["Lobster", "sans-serif"]
+      Lobster: ["Lobster", "sans-serif"],
     },
     container:{
       center:true,

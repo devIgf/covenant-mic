@@ -124,3 +124,7 @@ sr.reveal(`.about__item__1-content, .about__item__2-img`, {origin: "right"})
 sr.reveal(`.about__item__2-content, .about__item__1-img`, {origin: "left"})
 
 sr.reveal(`.review__leaf, .footer__floral`, {delay:1000, origin: "left"})
+
+
+
+

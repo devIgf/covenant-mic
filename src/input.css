@@ -4,6 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype'); 
+  }
+
+@font-face {
+    font-family: 'Italic'; 
+    src: url('../assets/fonts/Futura-Medium-Italic.ttf') format('truetype'); 
+  }
+@font-face {
+    font-family: 'Futura'; 
+    src: url('../assets/fonts/Futura-Bold.otf') format('opentype'); 
+  }
+
+
+
 html{
     @apply overflow-x-hidden scroll-smooth;
 }
@@ -33,7 +50,7 @@ h3{
 }
 
 .nav-link:hover {
-    @apply text-yellow-500;
+    @apply text-white;
 }
 
 
@@ -44,7 +61,7 @@ h3{
 
 /* active */
 .active{
-    @apply text-yellow-500
+    @apply text-white
 }
 
 /* button */ 
