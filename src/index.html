@@ -90,24 +90,25 @@
 
           <div class="container space-y-10 xl:space-y-0">
             <!-- item 1 -->
-            <div class="flex flex-col items-center lg:flex-row-reverse">
+            <div class="flex flex-col items-center mb-20 lg:flex-row-reverse">
               <!-- image  -->
                <div class="about__item__2-img w-full lg:w-1/2">
                   <img src="/../assets/img/qui1.jpg" alt="about_image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                </div>
 
                <!-- content  -->
-               <div class="about__item__2-content w-full lg:w-1/2">
+               <div class="about__item__2-content w-full lg:w-1/2 text-center">
                   <div class="space-y-5">
                       <h3>
                           <span class="text-yellow-500">MISSION</span> 
                       </h3>
                       <p class="text-black">
-                        Fournir des services
-                        multimédias innovants tout
-                        en respectant des valeurs
-                        environnementales et
-                        sociales.
+                        Fournir des services <br>
+                        multimédias innovants tout <br>
+                        en respectant des valeurs <br>
+                        environnementales et <br>
+                        sociales, avec une approche <br>
+                        durable et responsable.
                       </p>
                   </div>
                </div>
@@ -120,25 +121,24 @@
                    </div>
 
                    <!-- content  -->
-                   <div class="about__item__1-content w-full lg:w-1/2">
+                   <div class="about__item__1-content w-full lg:w-1/2 text-center">
                       <div class="space-y-5">
                           <h3>
-                            <span class="text-yellow-500">VISION</span>  <br>
+                            <span class="text-yellow-500 text-center">VISION</span>  <br>
                           </h3>
                           <p class="text-black">
-                            Devenir un acteur de référence
-                            dans le domaine des voix off,
-                            du multimédia et de
-                            l'accompagnement artistique
-                            en intégrant des pratiques
-                            éthiques et éco-responsables.
-                            durable et responsable
+                            Devenir un acteur de référence <br>
+                            dans le domaine des voix off, <br>
+                            du multimédia et de <br>
+                            l'accompagnement artistique <br>
+                            en intégrant des pratiques <br>
+                            éthiques et éco-responsables. <br>
                           </p>
                       </div>
                    </div>
                </div>
                <!-- item 3 -->
-                <div class="items-center">
+                <div class="items-center ml-20 mt-10">
                   <h3 class="mb-4 mt-10">
                     <span class="text-black">VALEURS</span><br>
                   </h3>
@@ -179,7 +179,7 @@
 
 
         <div class="about__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
-            <h2 class="title"><span class="text-white">CE QUE</span> NOS OFFRES DE SERVICES ?</h2>
+            <h2 class="title"><span class="text-white"></span> NOS OFFRES DE SERVICES</h2>
             <p class="max-w-2xl">Dans l'optique d'améliorer la visibilité et les performances de nos clients nous
               proposons des services en: </p>
         </div>
@@ -235,8 +235,8 @@
             <!-- item 2 -->
              <div class="flex flex-col items-center lg:flex-row gap-16">
                 <!-- image  -->
-                 <div class="about__item__1-img w-full lg:w-1/2">
-                    <img src="/../assets/img/coach.png" alt="about_image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                 <div class="about__item__1-img left-0 w-full lg:w-1/2">
+                    <img src="/../assets/img/coach.png" alt="about_image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3">
                  </div>
 
                  <!-- content  -->
@@ -258,7 +258,7 @@
                               - Coaching en production audiovisuelle
                             </li>
                             <li>
-                              - Workshops et formations : Sessions sur la voix off, le sound design et la production musicale.
+                              - Workshops et formations : Sessions sur la voix off, le sound <br> design et la production musicale.
                             </li>
                             <li>
                               - Multimédia et utilisation maîtrisée de l'IA
@@ -290,9 +290,6 @@
                             - Mise en relation des talents avec les entreprises.
                           </li>
                           <li>
-                            - Plateforme de recrutement spécialisée 
-                          </li>
-                          <li>
                             - Partenariats avec agences et studios 
                           </li>
                         </ul>
@@ -308,18 +305,40 @@
   <footer class="bg-black text-yellow-500 pt-20 pb-10 md:pt-28 relative">
       <!-- newsletter -->
        <div class="container text-white absolute top-0 right-0 left-0 -translate-y-1/2">
-          <div class="bg-yellow-500 px-10 pt-5 pb-10 space-y-5 rounded-md">
-              <h3>
-                  <span class="text-black">Subscribe</span> to our newsletter</h3>
-
-              <div class="flex flex-col md:flex-row gap-1">
-                  <input type="email" placeholder="Your Email Address" class="w-full px-5 py-3 text-black rounded-md outline-none">
-                  <button class="flex items-center justify-center gap-1 bg-black     px-5 py-3 rounded-md hover:opacity-80 duration-300">
-                      <span>Subscribe</span>
-                      <i class="ri-send-plane-2-fill"></i>
-                  </button>
-              </div>
+        <div class="bg-yellow-500 px-10 pt-5 pb-10 space-y-5 rounded-md">
+          <h3>
+              <span class="text-black">S'abonner</span> à notre bulletin
+          </h3>
+          <div class="flex flex-col md:flex-row gap-1">
+              <input id="emailInput" type="email" placeholder="Your Email Address" class="w-full px-5 py-3 text-black rounded-md outline-none">
+              <button onclick="validateEmail()" class="flex items-center justify-center gap-1 bg-black px-5 py-3 rounded-md hover:opacity-80 duration-300">
+                  <span>S'abonner</span>
+                  <i class="ri-send-plane-2-fill"></i>
+              </button>
           </div>
+      </div>
+      
+      <!-- Pop-up de confirmation -->
+      <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+              <i class="ri-checkbox-circle-fill text-4xl text-yellow-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Merci !</h3>
+              <p class="text-gray-700">Votre abonnement a été enregistré avec succès.</p>
+              <button onclick="closeModal('successModal')" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-800">Fermer</button>
+          </div>
+      </div>
+      
+      <!-- Pop-up d'erreur -->
+      <div id="errorModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+              <i class="ri-error-warning-fill text-4xl text-red-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Oups !</h3>
+              <p class="text-gray-700">Veuillez entrer une adresse email valide.</p>
+              <button onclick="closeModal('errorModal')" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">Fermer</button>
+          </div>
+      </div>
+      
+      
        </div>
       
       <!-- social icon -->

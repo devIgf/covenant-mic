@@ -128,3 +128,28 @@ sr.reveal(`.review__leaf, .footer__floral`, {delay:1000, origin: "left"})
 
 
 
+function validateEmail() {
+    const email = document.getElementById('emailInput').value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (regex.test(email)) {
+        showModal('successModal');
+        resetInput();
+    } else {
+        showModal('errorModal');
+    }
+}
+
+function showModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.remove('hidden');
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.add('hidden');
+}
+
+function resetInput() {
+    document.getElementById('emailInput').value = '';
+}
